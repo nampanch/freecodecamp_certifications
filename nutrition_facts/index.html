@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nutrition Label</title>
+  <!--
+  Step 4:Within your head element, add a link element with the rel attribute set to stylesheet and the href attribute 
+  set to https://fonts.googleapis.com/css?family=Open+Sans:400,700,800.This will import the Open Sans font family, with the 
+  font weight values 400, 700, and 800.Also add a link element to link your styles.css file. 
+  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+<!--
+Step 7:Wrap your h1 and p elements in a div element. Give that div a class attribute set to label.
+-->
+<div class="label">
+	<!-- 
+	Step 1:We've provided a basic HTML boilerplate for you.
+	Create an h1 element within your body element and give it the text Nutrition Facts.
+	Step 21:Give your h1 element a class attribute set to bold. This will make the text bold again.
+	Step 24:Wrap everything within the .label element in a new header element.
+	-->
+	<header>
+	<h1 class="bold">Nutritional Facts</h1>
+	<!-- Step 16:Lines can help separate and group important content, especially when space is limited.
+Create a div element below your h1 element, and give it a class attribute set to divider.-->
+	<div class="divider"></div>
+	
+	<!--Step 2:Below your h1 element, add a p element with the text 8 servings per container.
+	
+	-->
+	<p>8 servings per container</p> 
+	<!--
+	Step 3 :Add a second p element with the text Serving size 2/3 cup (55g).
+	Step 19:Nutrition labels have a lot of bold text to draw attention to important information. 
+	Rather than targeting each element that needs to be bold, it is more efficient to use a class to apply the bold styling
+	to every element.Give your second p element a class attribute set to bold.
+	Step 22:Horizontal spacing between equally important elements can increase the readability of your text.
+	Wrap the text 2/3 cup (55g) in a span element.
+	-->
+	 <p class="bold">Serving size <span>2/3 cup (55g)</span></p> 
+	 </header>
+	 <!--
+	 Step 26:Create a new div element below your header element, and give it a class attribute set to divider large.
+	 -->
+	 <div class="divider large"></div>
+	 <!--
+	 Step 29: Create a div with class calories-info below for large class element.
+	 Step 30:Within your .calories-info element, create a div element. Give that div element a class attribute set to left-container.
+	 Within the newly created div element, create a h2 element with the text Amount per serving. Give the h2 element a class attribute 
+	 set to bold small-text.
+	 Step 33:Below your .small-text element, create a new p element with the text Calories.
+	 Also below the .left-container element, create a new span element with the text 230.
+	 -->
+	 <div class="calories-info">
+      <div class="left-container">
+        <h2 class="bold small-text">Amount per serving</h2>
+        <p>Calories</p>
+      </div>
+        <span>230</span>
+    </div>
+	
+	<!--
+	Step 38:Below your .calories-info element, add a div with the class attribute set to divider medium.
+	
+	-->
+		<div class="divider medium">
+		</div>
+	<!--
+	Step 40:Create a new div element below your .medium element. Give it a class attribute set to daily-value small-text. 
+	Within this new div, add a p element with the text % Daily Value *, and set the class attribute to bold right.
+	Step 42:Use your existing .divider element as an example to add a new divider after the p element.
+	Step 43:After your last .divider element, create a p element and give it the text Total Fat 8g 10%. 
+	Wrap the text Total Fat in a span element with the class of bold. Wrap the text 10% in another span 
+	element with the class of bold.Finally, nest the Total Fat span element and the text 8g in an additional span element for alignment.
+	Step 44:Below your element with the Total Fat text, create a new p element with the text Saturated Fat 1g 5%. 
+	Wrap the 5% in a span with the class attribute set to bold. In this case this is enough to align the percentage to 5%.
+	Step 45:This new p element will need to be indented. Give it a class set to indent.
+	Step 48:The bottom borders under your % Daily Value * and Saturated Fat 1g 5% elements do not extend the full width of the label. 
+	Add no-divider to the class for these two elements.
+	Step 50:Now you will have to add separate dividers below your .no-divider elements.Your first .no-divider element has a .divider after it.
+	Create another .divider after your second .no-divider element.
+	Step 51:After your last .divider, create another p element with the text Trans Fat 0g. Italicize the word Trans by wrapping it in an i element. 
+	Give the new p element the class attribute set to indent no-divider. Wrap Trans Fat 0g in a span element for alignment.
+	Step 52:Create another .divider after your last p element.
+	Step 53:After your last .divider, create a new p element with the text Cholesterol 0mg 0%. Wrap the text Cholesterol in a span element, 
+	and give that span element the class of bold. Wrap the text 0% in another span element,
+	with the class of bold. Finally, nest the Cholesterol span element and the text 0mg in an additional span element for alignment.
+	Step 54:Below your last p element, create another p element with the text Sodium 160mg 7%. Wrap the text Sodium in a span element with a class attribute set to bold. 
+	Wrap the 7% text in another span element with the class set to bold. Also add an additional span element around Sodium 160mg for aligning it correctly.
+	Step 55:Add another p element with the text Total Carbohydrate 37g 13%. Like before, use span elements to make the text Total 
+	Carbohydrate and 13% bold. Also add an additional span element to wrap the Total Carbohydrate 37g text in a span element so to have it aligned to the left,
+	and 13% to the right.
+	Step 56:Below your last p element, add another p element with the text Dietary Fiber 4g. Give the p element the class necessary to indent 
+	it and remove the dividing border. Then create a divider below that p element.
+	Step 56:Below your last p element, add another p element with the text Dietary Fiber 4g. Give the p element the class necessary to 
+	indent it and remove the dividing border. Then create a divider below that p element.
+	Step 57:Create another p element after your last .divider, and give it the text Total Sugars 12g. Assign that p element the class values necessary 
+	to indent it and remove the bottom border. Then create another .divider below your new p element.
+	Step 58:The advantage to creating these dividers is that you can apply specific classes to style them individually. Add double-indent to the class for your last .divider.
+	Step 60:Below your .double-indent element, add a new p element with the text Includes 10g Added Sugars 20%. 
+	Your new p element should also be double indented, and have no bottom border. Use a span to make the 20% bold and right aligned.
+	Then create another divider after that p element.
+	Step 61:After your last divider, create another p element with the text Protein 3g. Use the necessary classes to remove the bottom border,
+	and a span to make the Protein bold.Following this element, create a large divider.
+	Step 62:Create another p element below your large divider. Give the p element the text Vitamin D 2mcg 10%.
+	The p element contains only text, you can wrap the percentage in a span element so that it is considered a 
+	separate entity from the rest of the text, and it's moved to the right.
+	Step 63:Create another p element, give it the text Calcium 260mg 20%. Align 20% to the right. Below that, 
+	create a p element with the text Iron 8mg 45%, aligning the 45% to the right.
+	Step 64:Create the final p element for your .daily-value section. Give it the text Potassium 235mg 6%. Align the 6% 
+	text to the right, and remove the bottom border of the p element.
+	-->	
+		<div class="daily-value small-text">
+      <p class="bold right no-divider">% Daily Value *</p>
+      <div class="divider"></div>
+      <p><span><span class="bold">Total Fat</span> 8g</span> <span class="bold">10%</span></p>
+      <p class="indent no-divider">Saturated Fat 1g <span class="bold">5%</span></p>
+	  <div class="divider"></div>
+	  <p class="indent no-divider"><span><i>Trans</i> Fat 0g</span></p>
+	  <div class="divider"></div>
+	  <p><span><span class="bold">Cholesterol</span> 0mg</span> <span class="bold">0%</span></p>
+	  <p><span><span class="bold">Sodium</span> 160mg</span> <span class="bold">7%</span></p>
+	  <p><span><span class="bold">Total Carbohydrate</span> 37g</span> <span class="bold">13%</span></p>
+	  <p class="indent no-divider">Dietary Fiber 4g</p>
+      <div class="divider"></div>
+	  <p class="indent no-divider"> Total Sugars 12g</p>
+      <div class="divider double-indent"></div>
+	  <p class="double-indent no-divider">Includes 10g Added Sugars <span class="bold">20%</span></p>
+      <div class="divider"></div>
+	  <p class="no-divider"><span class="bold">Protein</span> 3g</p>
+       <div class="divider large"></div>
+	   <p>Vitamin D 2mcg <span>10%</span></p>
+	   <p>Calcium 260mg <span>20%</span></p>
+      <p>Iron 8mg <span>45%</span></p>
+	  <p class="no-divider">Potassium 235mg <span>6%</span></p>
+    </div>
+	
+	<!-- Step 65:Add a medium divider after your .daily-value element. Below that new divider, create a p element with the class attribute set to note.
+	Give the p element the following text:* The % Daily Value (DV) tells you how much a nutrient-->
+	<div class="divider medium"></div>
+	<p class="note">* The % Daily Value (DV) tells you how much a nutrient in a serving 
+	of food contributes to a daily diet. 2,000 calories a day is used for general nutrition advice.</p>
+</div>	 
+</body>
+</html>

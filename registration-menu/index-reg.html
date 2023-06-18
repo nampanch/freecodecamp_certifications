@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+     <div id="reg_form">
+    <main>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+
+    <p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+    <form id="survey-form">
+      <fieldset>
+      <label for="name-label">Name<input id="name-label" type="text" placeholder="Enter your name" required /></label>
+      <label for="email-label">Email<input id="email-label" type="email" placeholder="Enter your Email"/></label>
+       <label for="age-label">Age<input id="age-label" type="number" min="14" max="120" placeholder="Age"/></label>
+       </fieldset>
+       <fieldset>
+         <label for="dropdown"> Which option best describes your current role?
+         <select id="dropdown">
+           <option value="">Select current role</option>
+           <option value="1">Student</option>
+           <option value="2">Full time job</option>
+           <option value="3">Full time learner</option>
+           <option value="4">prefer not to say</option>
+           <option value="5">others</option>
+         </select>
+         </label>
+
+
+       </fieldset>
+
+       <fieldset>
+        <label> <input type="radio"/>Definitely</label>
+        <label> <input type="radio"/>Maybe</label>
+        <label> <input type="radio"/>Not sure</label>
+       </fieldset>
+
+         <fieldset>
+         <label for="favor">What is your favorite feature of freeCodeCamp?
+         <select id="favor">
+           <option value="">challenges</option>
+           <option value="1">Projects</option>
+           <option value="2">Community</option>
+           <option value="3">open Source</option>
+
+         </select>
+         </label>
+
+
+       </fieldset>
+
+       <fieldset>
+         <!-- <label for="improve" class="inline"> What would you like to see improved? (Check all that apply)
+
+         </label> -->
+         <label for="improve"><input id="front" type="checkbox"  for="front" class="inline"/>Front-end Projects</label>
+         <label for="improve"><input id="back" type="checkbox" for="back" class="inline"/>Back-end Projects</label>
+        <label for="improve"><input id="data" type="checkbox" for="data" class="inline"/>Data visualization</label>
+        <label for="improve"><input id="challenges"  for="challenges" type="checkbox" class="inline"/>Challenges</label>
+        <label for="improve"><input id="open" type="checkbox" for="open" class="inline"/>Open Source Community</label>
+        <label for="improve"><input id="gitter" type="checkbox" for="gitter" class="inline"/>Gitter help rooms</label>
+        <label for="improve"><input id="videos" type="checkbox" for="videos" class="inline"/>Videos</label>
+        <label for="improve"> <input id="city" type="checkbox" for="city" class="inline"/>City Meetups</label>
+        <label for="improve"><input id="wiki" type="checkbox" for="wiki" class="inline"/>Wiki</label>
+        <label for="improve"><input id="forum" type="checkbox" for="forum" class="inline"/>Forum</label>
+        <label for="improve"><input id="add" type="checkbox" for="add" class="inline"/>Additional Courses</label>
+       </fieldset>
+       <fieldset>
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" rows="3" cold="30" placeholder="Enter your comment here"></textarea>
+       </fieldset>
+
+       <input type="submit" value="Submit" />
+
+    </form>
+    </div>
+      </main>
+  </body>
+</html>
